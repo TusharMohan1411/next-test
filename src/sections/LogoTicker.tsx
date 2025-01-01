@@ -3,6 +3,7 @@
 import { LOGOS } from '@/assets/assets'
 import React from 'react'
 import { motion } from "motion/react"
+import Image from 'next/image';
 
 function LogoTicker() {
     return (
@@ -23,7 +24,7 @@ function LogoTicker() {
                             }}
                             className='flex flex-none gap-14 -translate-x-1/2'>
                             {LOGOS.map((logo, index) => (
-                                <img src={logo.src} key={index} alt='image' className='h-8' />
+                                <Image src={logo} key={index} alt='image' className='h-10' />
                             ))}
                         </motion.div>
                     </div>
